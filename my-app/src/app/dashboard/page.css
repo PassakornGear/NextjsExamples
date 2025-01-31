@@ -1,0 +1,36 @@
+.grid {
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-template-rows: 70px minmax(160px, auto) auto;
+    grid-template-areas: 
+      'header header'
+      'leftbar main'
+      'footer footer';
+    column-gap: 0px;
+    row-gap: 0px;
+  }
+  
+  .page-header {
+    grid-area: header;
+  }
+  
+  .page-leftbar {
+    grid-area: leftbar;
+  }
+  
+  .page-main {
+    grid-area: main;
+  }
+  
+  .page-footer {
+    grid-area: footer;
+  }
+  
+  .content {
+    color: #242424;
+    background-color: #fff;
+    font-weight: 600;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 10px;
+  }
